@@ -1,0 +1,50 @@
+[core]
+  excludesfile = ./ignore
+  trustctime = false
+  untrackedCache = true
+  precomposeunicode = true
+  quotePath = false
+
+[commit]
+  gpgsign = true
+
+[user]
+  name = "equt"
+  email = "git@47.rs"
+  signingkey = "C5A974C726D0D6AE"
+
+[github]
+  user = "equt"
+
+[gpg]
+  program = gpg
+
+[push]
+  followTags = true
+
+[apply]
+  whitespace = fix
+
+[alias]
+  a = add
+  amend = commit --amend --reuse-message=HEAD
+
+  b = branch
+
+  c = commit -v
+  ca = commit -a -v
+  cam = commit -a -m -v
+  clone = clone --recursive
+  co = checkout
+
+  # Adapted from https://is.gd/V5Qu4C
+  fa = "!f() { git ls-files -m -o --exclude-standard \
+    | fzf --height 50% --reverse --preview-window down:50%:noborder \
+    --bind 'ctrl-j:preview-down,ctrl-k:preview-up' \
+    --preview 'bat --color=always --style=numbers --line-range :50 {}' --print0 -m \
+    | xargs -0 -t -o git add; }; f"
+
+  pl = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  ps = push
+
+  s = status -s
