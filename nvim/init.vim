@@ -6,7 +6,7 @@ set undofile undolevels=1024 undoreload=2048 conceallevel=0 concealcursor+=nvc
 set modelines=1 exrc secure confirm number relativenumber scrolloff=5
 set hlsearch incsearch showmatch ignorecase smartcase splitbelow splitright
 set listchars=tab:→\ ,nbsp:␣,trail:• list termguicolors noshowmode
-set shortmess+=ac signcolumn=yes spell foldcolumn=2 nowritebackup nocompatible
+set shortmess+=ac signcolumn=yes nospell foldcolumn=2 nowritebackup nocompatible
 
 let mapleader = "\<Space>"
 let &showbreak = '> '
