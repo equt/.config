@@ -1,0 +1,25 @@
+format = '''
+[\[](#A0A0AD) $hostname[$directory](#4969A3) $git_branch$git_status$git_state$jobs[\]](#A0A0AD) $node$aws
+$character
+'''
+
+[character]
+success_symbol = '[❯](bold #5E8D89)'
+
+[aws]
+format = '[on](#A0A0AD) [$symbol$profile($region)](#BA8F4C)'
+symbol = ' '
+
+[directory]
+format = '$path'
+truncation_length = 1
+
+[git_branch]
+format = '([on](#A0A0AD) [$symbol$branch](#7C758F) )'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = '#A17F7F'
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
