@@ -1,5 +1,5 @@
 format = '''
-[\[](#A0A0AD) $hostname[$directory](#4969A3) $git_branch$git_status$git_state$jobs[\]](#A0A0AD) $nodejs$aws
+[\[](#A0A0AD) $hostname[$directory](#4969A3) $git_branch$git_status$git_state$jobs[\]](#A0A0AD) $nodejs$rust$aws
 $character
 '''
 
@@ -23,3 +23,7 @@ style = '#A17F7F'
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
+
+[rust]
+symbol = ' '
+format = '[with](#A0A0AD) [$symbol$version](#995665) '
