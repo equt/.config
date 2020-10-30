@@ -66,6 +66,7 @@ let g:lightline = {
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>s :Rg<CR>
 nnoremap <leader>' :Marks<CR>
+nnoremap <leader>gp :Dispatch! git push<CR>
 nnoremap <silent><leader>m :NERDTreeToggle<CR>
 nnoremap \ <CMD>nohlsearch<CR>
 cnoremap w!! w !sudo tee % >/dev/null
