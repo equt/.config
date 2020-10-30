@@ -23,5 +23,6 @@ set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
 
 starship init fish | source
 fnm env | source
+source (lua $XDG_CONFIG_HOME/fish/scripts/z.lua --init fish | psub)
 
 set PATH "$XDG_DATA_HOME/cargo/bin" $PATH

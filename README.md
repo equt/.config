@@ -10,6 +10,7 @@ May or may not be my configuration files
 - `fzf`
 - `fnm`
 - `starship`
+- `lua`
 - `aws-cli` and `aws-vault` if AWS is needed
 
 ## Special Cases
