@@ -1,5 +1,5 @@
 format = '''
-[\[](#A0A0AD) $hostname[$directory](#4969A3) $git_branch$git_status$git_state$jobs[\]](#A0A0AD) $node$aws
+[\[](#A0A0AD) $hostname[$directory](#4969A3) $git_branch$git_status$git_state$jobs[\]](#A0A0AD) $nodejs$aws
 $character
 '''
 
