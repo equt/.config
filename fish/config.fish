@@ -7,6 +7,7 @@ alias c clear
 alias v nvim
 alias g git
 alias l exa
+alias ls exa
 alias la 'exa -a'
 
 set fish_greeting ''
