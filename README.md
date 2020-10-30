@@ -11,6 +11,7 @@ May or may not be my configuration files
 - `fnm`
 - `starship`
 - `lua`
+- `ripgrep`
 - `aws-cli` and `aws-vault` if AWS is needed
 
 ## Special Cases
