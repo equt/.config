@@ -22,3 +22,5 @@ set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
 
 starship init fish | source
 fnm env | source
+
+set PATH "$XDG_DATA_HOME/cargo/bin" $PATH
