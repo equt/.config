@@ -26,4 +26,4 @@ starship init fish | source
 fnm env | source
 source (lua $XDG_CONFIG_HOME/fish/scripts/z.lua --init fish | psub)
 
-set PATH "$XDG_DATA_HOME/cargo/bin" $PATH
+set PATH "$XDG_DATA_HOME/cargo/bin" "$HOME/.cabal/bin" "$HOME/.local/bin" $PATH
