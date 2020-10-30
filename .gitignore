@@ -1,2 +1,5 @@
 fish/fish_variables
 nvim/spell
+
+# See https://github.com/cli/cli/issues/554
+gh/
