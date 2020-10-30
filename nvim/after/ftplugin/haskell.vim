@@ -3,7 +3,7 @@ setlocal sw=2 sts=2 formatoptions-=o formatoptions+=t foldmethod=syntax nofolden
 let &l:formatprg = 'brittany'
 
 call coc#config('languageserver.haskell', {
-    \ 'command': 'hie-wrapper',
+    \ 'command': 'haskell-language-server-wrapper',
     \ 'args': ['--lsp'],
     \ 'rootPatterns': [
     \     'stack.yaml',
