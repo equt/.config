@@ -27,3 +27,7 @@ format = '\([$state( $progress_current/$progress_total)]($style)\) '
 [rust]
 symbol = ' '
 format = '[with](#A0A0AD) [$symbol$version](#995665) '
+
+[nodejs]
+symbol = ' '
+format = '[with](#A0A0AD) [$symbol$version](#718A7D) '
