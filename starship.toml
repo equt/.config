@@ -18,7 +18,7 @@ truncation_length = 1
 format = '([on](#A0A0AD) [$symbol$branch](#7C758F) )'
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '([$all_status$ahead_behind]($style) )'
 style = '#A17F7F'
 
 [git_state]
