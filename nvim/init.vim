@@ -64,7 +64,6 @@ let g:lightline = {
 \}
 
 nnoremap <leader>f :Files<CR>
-nnoremap <leader>g :GFiles<CR>
 nnoremap <leader>s :Rg<CR>
 nnoremap <leader>' :Marks<CR>
 nnoremap <silent><leader>m :NERDTreeToggle<CR>
