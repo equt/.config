@@ -1,5 +1,4 @@
 [core]
-  excludesfile = ./ignore
   trustctime = false
   untrackedCache = true
   precomposeunicode = true
@@ -21,6 +20,9 @@
 
 [push]
   followTags = true
+
+[pull]
+  ff = only
 
 [apply]
   whitespace = fix
