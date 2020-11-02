@@ -5,6 +5,7 @@ end
 
 alias c clear
 alias v nvim
+alias vim nvim
 alias g git
 alias l exa
 alias ls exa
