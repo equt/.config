@@ -3,8 +3,8 @@ function! utils#system(cmd) abort
 endfunction
 
 function! utils#dark() abort
-    call system('__dark_mode')
-    if v:shell_error == 0
+    let l:status = utils#system('dark-mode status')
+    if l:status == 'on'
         return v:true
     else
         return v:false
