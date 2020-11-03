@@ -1,9 +1,7 @@
 bind \e fish_vi_key_bindings
 
-
+function fish_title; end
 function has; type -q $argv; end
-function fish_title
-end
 
 alias c clear
 has nvim; and alias v nvim; and alias vim nvim
