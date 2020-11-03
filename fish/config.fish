@@ -1,15 +1,15 @@
 bind \e fish_vi_key_bindings
 
+
+function has; type -q $argv; end
 function fish_title
 end
 
 alias c clear
-alias v nvim
-alias vim nvim
-alias g git
-alias l exa
-alias ls exa
-alias la 'exa -a'
+has nvim; and alias v nvim; and alias vim nvim
+has git; and alias g git
+alias l ls; alias la 'ls -a'
+has exa; and alias l exa; and alias ls exa; and alias la 'exa -a'
 
 set fish_greeting ''
 
@@ -24,8 +24,8 @@ set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
 set -gx STACK_ROOT "$XDG_DATA_HOME/stack"
 set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 
-starship init fish | source
-fnm env | source
-source (lua $XDG_CONFIG_HOME/fish/scripts/z.lua --init fish | psub)
+has starship; and starship init fish | source
+has fnm; and fnm env | source
+has lua; source (lua $XDG_CONFIG_HOME/fish/scripts/z.lua --init fish | psub)
 
 set PATH "$XDG_DATA_HOME/cargo/bin" "$HOME/.cabal/bin" "$HOME/.local/bin" $PATH
