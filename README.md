@@ -1,20 +1,8 @@
-May or may not be my configuration files
+## Links
 
-## Package Manager
+- [`rustup`]
+- [Docker CE Desktop] & [Docker CE Script]
 
-- `git`
-- `fish`
-- `curl`
-- `nvim`
-- `exa`
-- `fzf`
-- `fnm`
-- `starship`
-- `lua`
-- `ripgrep`
-- `aws-cli` and `aws-vault` if AWS is needed
-
-## Special Cases
-
-- [`rustup`](https://rustup.rs)
-- `Docker CE` [Desktop](https://www.docker.com/products/docker-desktop) or the [installation script](https://get.docker.com)
+[`rustup`]: https://rustup.rs
+[docker ce desktop]: https://www.docker.com/products/docker-desktop
+[docker ce script]: https://get.docker.com
