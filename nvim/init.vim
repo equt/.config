@@ -42,7 +42,7 @@ let g:lightline = {
             \ ['branch', 'file'],
         \ ],
         \ 'right': [
-            \ ['precentage', 'lineinfo'],
+            \ ['precentage'],
             \ [],
             \ ['filetype'],
         \ ],
