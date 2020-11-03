@@ -110,6 +110,7 @@ call plug#begin($XDG_CACHE_HOME ? $XDG_CACHE_HOME : $HOME . '/.cache/nvim')
     Plug 'mattn/emmet-vim'
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
     Plug 'sheerun/vim-polyglot'
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
