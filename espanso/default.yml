@@ -1,0 +1,68 @@
+name: default
+
+matches:
+  - trigger: ;date
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: date
+        params:
+          format: "%b %-e, %Y"
+
+  - trigger: ;ddate
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: date
+        params:
+          format: "%F"
+
+  - trigger: ;time
+    replace: "{{time}} "
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%H: %M"
+
+  - trigger: ;format
+    replace: "%b %-d, %Y"
+
+  - trigger: ;forall
+    replace: ∀
+
+  - trigger: ;lambda
+    replace: λ
+
+  - trigger: ;exists
+    replace: ∃
+
+  - trigger: ;bot
+    replace: ⊥
+
+  - trigger: ';::'
+    replace: ∷
+
+  - trigger: ;->
+    replace: →
+
+  - trigger: ;<-
+    replace: ←
+
+  - trigger: ;=>
+    replace: ⇒
+
+  - trigger: ;<=
+    replace: ⇐
+
+  - trigger: ;oe
+    replace: ö
+
+  - trigger: ;ue
+    replace: ü
+
+  - trigger: ;ae
+    replace: ä
+
+  - trigger: ;ss
+    replace: ß
