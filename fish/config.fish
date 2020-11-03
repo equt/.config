@@ -4,7 +4,8 @@ function fish_title; end
 function has; type -q $argv; end
 
 alias c clear
-has nvim; and alias v nvim; and alias vim nvim
+alias v vim
+has nvim; and alias vim nvim
 has git; and alias g git
 alias l ls; alias la 'ls -a'
 has exa; and alias l exa; and alias ls exa; and alias la 'exa -a'
