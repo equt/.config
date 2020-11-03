@@ -8,6 +8,9 @@ has nvim; and alias v nvim; and alias vim nvim
 has git; and alias g git
 alias l ls; alias la 'ls -a'
 has exa; and alias l exa; and alias ls exa; and alias la 'exa -a'
+has fzf; and alias f 'fzf --height 50% --reverse --preview-window down:50%:noborder --print0 -m \
+    --bind "ctrl-j:preview-down,ctrl-k:preview-up" --preview "bat --style=numbers \
+    --color=always {} --line-range :50"'
 
 set fish_greeting ''
 
@@ -47,10 +50,5 @@ function prompt_fzf_opts --on-event fish_prompt
       --height=40% --reverse
   "
 end
-
-alias f 'fzf --height 20% --reverse --print0 -m'
-alias fzf 'fzf --height 50% --reverse --preview-window down:50%:noborder --print0 -m \
-    --bind "ctrl-j:preview-down,ctrl-k:preview-up" --preview "bat --style=numbers \
-    --color=always {} --line-range :50"'
 
 set PATH "$XDG_DATA_HOME/cargo/bin" "$HOME/.cabal/bin" "$HOME/.local/bin" $PATH
