@@ -29,9 +29,11 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.docker_meta.outputs.tags }}
           labels: ${{ steps.docker_meta.outputs.labels }}
-      - uses: peter-evans/dockerhub-description@v2
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: equt/playground
-          short-description: "Sinos' config on Archlinux"
+
+      # See https://github.com/docker/hub-feedback/issues/1927#issuecomment-565779224
+      # - uses: peter-evans/dockerhub-description@v2
+        # with:
+          # username: ${{ secrets.DOCKERHUB_USERNAME }}
+          # password: ${{ secrets.DOCKERHUB_TOKEN }}
+          # repository: equt/playground
+          # short-description: "Sinos' config on Archlinux"
