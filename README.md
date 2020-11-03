@@ -1,4 +1,5 @@
 ![image action status](https://github.com/equt/.config/workflows/image/badge.svg)
+![image tag](https://img.shields.io/docker/v/equt/playground)
 
 ## Play with it
 
