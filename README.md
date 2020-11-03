@@ -1,3 +1,5 @@
+![image action status](https://github.com/equt/.config/workflows/image/badge.svg)
+
 ## Play with it
 
 A docker image is available
