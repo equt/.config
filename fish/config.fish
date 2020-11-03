@@ -36,7 +36,7 @@ has lua; source (lua $XDG_CONFIG_HOME/fish/scripts/z.lua --init fish | psub)
 
 function prompt_fzf_opts --on-event fish_prompt
 
-  if test (dark-mode status) = "off"
+  if has dark-mode; and test (dark-mode status) = "off"
     # BG                 ; Not candidate text   ; Candidate text
     set color00 '#F0F0F4'; set color04 '#a0a0ad'; set color06 '#676880'
     # Line no && Curr >  ; Selected >           ; Matched part
