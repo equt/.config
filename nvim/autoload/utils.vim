@@ -1,3 +1,7 @@
+function! utils#system(cmd) abort
+    return substitute(system(a:cmd), '\n', '', 'g')
+endfunction
+
 function! utils#dark() abort
     call system('__dark_mode')
     if v:shell_error == 0
