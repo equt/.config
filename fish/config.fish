@@ -11,6 +11,7 @@ has exa; and alias l exa; and alias ls exa; and alias la 'exa -a'
 has fzf; and alias f 'fzf --height 50% --reverse --preview-window down:50%:noborder --print0 -m \
     --bind "ctrl-j:preview-down,ctrl-k:preview-up" --preview "bat --style=numbers \
     --color=always {} --line-range :50"'
+and alias vf 'v (f)'
 
 set fish_greeting ''
 
