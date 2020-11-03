@@ -3,6 +3,7 @@
   untrackedCache = true
   precomposeunicode = true
   quotePath = false
+  editor = nvim
 
 [commit]
   gpgsign = true
