@@ -22,6 +22,7 @@ set -gx FNM_DIR "$XDG_DATA_HOME/fnm"
 set -gx RUSTUP_HOME "$XDG_DATA_HOME/rustup"
 set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
 set -gx STACK_ROOT "$XDG_DATA_HOME/stack"
+set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 
 starship init fish | source
 fnm env | source
