@@ -4,3 +4,9 @@ call coc#add_extension(
     \ 'coc-tsserver',
     \ 'coc-eslint',
 \)
+
+let s:prettier_config = {
+    \ 'parser': 'babel',
+\ }
+
+let &l:formatprg = 'prettier' . utils#map_as_cli_options(s:prettier_config)
