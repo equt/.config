@@ -3,14 +3,6 @@
 
 ## Play with it
 
-A docker image is available
-
-```sh
-docker pull equt/playground:latest
-```
-
-Just run it
-
 ```sh
 docker run --rm -it equt/playground:latest
 ```
