@@ -31,6 +31,7 @@ let g:NERDTreeIgnore = [
     \ 'node_modules$',
     \ '\.git$',
     \ '\.DS_Store',
+    \ '.spago$',
     \ ]
 let g:dispatch_no_maps = 1
 let g:gitgutter_preview_win_floating = 0
