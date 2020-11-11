@@ -26,11 +26,11 @@ let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeAutoDeleteBuffer = 1
 let g:NERDTreeHighlightCursorline = 0
 let g:NERDTreeIgnore = [
-    \ '\.DS_Store',
-    \ '\.git$',
-    \ 'node_modules$',
     \ 'target$',
     \ 'output$',
+    \ 'node_modules$',
+    \ '\.git$',
+    \ '\.DS_Store',
     \ ]
 let g:dispatch_no_maps = 1
 let g:gitgutter_preview_win_floating = 0
