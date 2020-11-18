@@ -7,6 +7,7 @@ alias c clear
 alias v vim
 has nvim; and alias vim nvim
 has git; and alias g git
+has lazygit; and alias lg lazygit
 has direnv; and eval (direnv hook fish)
 alias l ls; alias la 'ls -a'
 has exa; and alias l exa; and alias ls exa; and alias la 'exa -a'
