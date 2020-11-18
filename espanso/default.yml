@@ -55,6 +55,9 @@ matches:
   - trigger: ;<=
     replace: ⇐
 
+  - trigger: ;ell
+    replace: ℓ
+
   - trigger: ;oe
     replace: ö
 
