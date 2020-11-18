@@ -56,4 +56,8 @@ function prompt_fzf_opts --on-event fish_prompt
   "
 end
 
+function ok
+  printf '%b\n' "\u001b[0m\u001b[0m\u001b[30m\u001b[42m OK \u001b[0m\u001b[0m $argv"
+end
+
 set PATH "$XDG_DATA_HOME/cargo/bin" "$HOME/.cabal/bin" "$HOME/.local/bin" $PATH
