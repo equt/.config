@@ -58,6 +58,12 @@ matches:
   - trigger: ;ell
     replace: ℓ
 
+  - trigger: \mt
+    replace: \mathtt{$|$}
+
+  - trigger: \mf
+    replace: \mathsf{$|$}
+
   - trigger: ;oe
     replace: ö
 
