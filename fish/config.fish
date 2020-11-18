@@ -60,4 +60,16 @@ function ok
   printf '%b\n' "\u001b[0m\u001b[0m\u001b[30m\u001b[42m OK \u001b[0m\u001b[0m $argv"
 end
 
+function alac
+  function _ffmpeg
+    set file $argv[1]
+    set name (echo $file | sed 's/\.[^.]*$//')
+    ffmpeg -i "$file" -c:v copy -c:a libfdk_aac -vbr 5 -hide_banner -loglevel panic -- "$name.m4a"
+    ok $name
+  end
+  for file in $argv
+    _ffmpeg "$file"
+  end
+end
+
 set PATH "$XDG_DATA_HOME/cargo/bin" "$HOME/.cabal/bin" "$HOME/.local/bin" $PATH
