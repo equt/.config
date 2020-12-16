@@ -6,7 +6,7 @@ call coc#add_extension(
 \)
 
 let s:prettier_config = {
-    \ 'parser': 'babel',
+    \ 'parser': 'typescript',
 \ }
 
 let &l:formatprg = 'prettier' . utils#map_as_cli_options(s:prettier_config)
