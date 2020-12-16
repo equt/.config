@@ -69,7 +69,7 @@ let g:lightline = {
 " See issue https://github.com/neoclide/coc.nvim/issues/2245
 let g:coc_data_home = $XDG_DATA_HOME . "/coc"
 
-nnoremap <leader>f :Files<CR>
+nnoremap <leader>f :GFiles<CR>
 nnoremap <leader>s :Rg<CR>
 nnoremap <leader>' :Marks<CR>
 nnoremap <leader>gp :Dispatch! git push<CR>
