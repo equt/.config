@@ -1,0 +1,6 @@
+git_protocol: https
+prompt: enabled
+aliases:
+  repo-delete: api -X DELETE "repos/$1"
+  make-private: api -X PATCH --data "private=true" "repos/$1"
+  make-public: api -X PATCH --data "private=false" "repos/$1"
