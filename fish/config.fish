@@ -5,6 +5,7 @@ function has; type -q $argv; end
 
 alias c clear
 alias v vim
+has emacs; and alias x emacs
 has nvim; and alias vim nvim
 has git; and alias g git
 has lazygit; and alias lg lazygit
