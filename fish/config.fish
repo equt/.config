@@ -74,4 +74,4 @@ function alac
   end
 end
 
-set PATH "$XDG_DATA_HOME/cargo/bin" "$HOME/.cabal/bin" "$HOME/.local/bin" $PATH
+set PATH "$XDG_DATA_HOME/cargo/bin" "$HOME/.cabal/bin" "$HOME/.local/bin" "$HOME/.ghcup/bin" $PATH
