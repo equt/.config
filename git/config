@@ -54,3 +54,6 @@
   ps = push
 
   s = status -s
+
+[credential "https://github.com"]
+  helper = !gh auth git-credential
