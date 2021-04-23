@@ -5,6 +5,9 @@
   quotePath = false
   editor = nvim
 
+[init]
+  defaultBranch = "main"
+
 [commit]
   gpgsign = true
 
