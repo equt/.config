@@ -5,7 +5,7 @@ set hidden splitright updatetime=100 ai sw=2 et sts=2 sr nowrap noswapfile
 set undofile undolevels=1024 undoreload=2048 conceallevel=0 concealcursor+=nvc
 set modelines=1 exrc secure confirm number relativenumber scrolloff=5
 set hlsearch incsearch showmatch ignorecase smartcase splitbelow splitright
-set listchars=tab:→\ ,nbsp:␣,trail:• list termguicolors noshowmode
+set listchars=tab:→\ ,nbsp:␣,trail:• list termguicolors noshowmode foldenable
 set shortmess+=ac signcolumn=yes nospell foldcolumn=2 nowritebackup nocompatible
 set shell=/usr/local/bin/fish
 
