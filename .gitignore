@@ -1,9 +1,4 @@
 fish/fish_variables
 nvim/spell
-
-# See https://github.com/cli/cli/issues/554
-gh/
-
-emacs/auto-save-list/
-
-configstore/
+gh/hosts.yml
+lazygit/state.yml
