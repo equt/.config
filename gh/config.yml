@@ -1,0 +1,7 @@
+git_protocol: ssh
+prompt: enabled
+aliases:
+    co: pr checkout
+    repo-delete: api -X DELETE "repos/$1"
+    make-private: api -X PATCH -f "private=true" "repos/$1"
+    make-public: api -X PATCH -f "private=false" "repos/$1"
