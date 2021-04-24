@@ -2,3 +2,4 @@ fish/fish_variables
 nvim/spell
 gh/hosts.yml
 lazygit/state.yml
+emacs/custom.el
