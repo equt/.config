@@ -49,8 +49,8 @@
   :hook (prog-mode . hl-todo-mode)
   :ensure t
   :config
-  (setq hl-todo-keyword-faces
-    '(("TODO"       warning bold)
-      ("FIXME"      error bold)
-      ("NOTE"       success bold)
-      ("DEPRECATED" font-lock-doc-face bold))))
+    (setq hl-todo-keyword-faces
+      '(("TODO"       warning bold)
+        ("FIXME"      error bold)
+        ("NOTE"       success bold)
+        ("DEPRECATED" font-lock-doc-face bold))))
