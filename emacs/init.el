@@ -47,6 +47,7 @@
 
 (use-package hl-todo
   :hook (prog-mode . hl-todo-mode)
+  :ensure t
   :config
   (setq hl-todo-keyword-faces
     '(("TODO"       warning bold)
